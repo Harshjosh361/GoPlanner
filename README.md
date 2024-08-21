@@ -1,5 +1,4 @@
 # GoPlanner
-# Task Tracker CLI
 
 **Go Planner** is a simple command-line application for managing tasks. This tool allows you to add, update, delete, and list tasks from the command line. It's a great way to practice working with the filesystem, handling user inputs, and building CLI applications in Go.
 
