@@ -1,18 +1,25 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 type Task struct {
-	Id     int    `json:"id"`
-	Title  string `json:"title"`
-	Status string `json:"status"`
+	Id        int       `json:"id"`
+	Title     string    `json:"title"`
+	Status    string    `json:"status"`
+	CreatedAt time.Time `json:"createdAt"`
+	UpdatedAt time.Time `json:"updatedAt"`
 }
 
 func AddTask(tasks []Task, title string) []Task {
 	task := Task{
-		Id:     len(tasks) + 1,
-		Title:  title,
-		Status: "todo",
+		Id:        len(tasks) + 1,
+		Title:     title,
+		Status:    "todo",
+		CreatedAt: time.Now(),
+		UpdatedAt: time.Now(),
 	}
 	tasks = append(tasks, task)
 	return tasks
