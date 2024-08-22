@@ -30,6 +30,7 @@ func UpdateTask(tasks []Task, id int, title string, status string) ([]Task, erro
 		if tasks[i].Id == id {
 			tasks[i].Title = title
 			tasks[i].Status = status
+			tasks[i].UpdatedAt = time.Now()
 			return tasks, nil
 		}
 	}
