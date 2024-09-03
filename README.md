@@ -41,7 +41,6 @@
 ```
 https://roadmap.sh/projects/task-tracker
 
+## License
 
-
-
-
+This project is licensed under the terms of the [MIT License](LICENSE).
